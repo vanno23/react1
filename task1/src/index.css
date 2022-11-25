@@ -1,0 +1,253 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: aliceblue;
+}
+
+.App{
+  width: 50%;
+  height: 20vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.App p{
+  color: white;
+  font-size: 19px;
+}
+
+.App .changeColor{
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  background-color: aliceblue;
+  text-transform: capitalize;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* birthday */
+.birthday{
+  background-color: white;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 25px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
+}
+
+.birthday .title{
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.birthday .objects{
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.birthday .object{
+  display: flex;
+  align-items: center;
+}
+
+.birthday .mainObject{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.birthday .object img{
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.birthday .object .info{
+  margin-left: 10px;
+}
+
+.birthday .object .info h1{
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.birthday .object .info h3{
+  font-size: 17px;
+  color: #7e99b3;;
+  margin-top: 5px;
+}
+.birthday .clearBtn{
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 4px;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+.birthday .deleteBtn{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 19px;
+}
+
+/* ---- exoerience ---- */
+.experience{
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.experience .title{
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 45px;
+  color: #02292d;
+}
+
+.experience .title::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #30a6b1;
+}
+
+.exp_container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 100px;
+  margin-bottom: 50px;
+}
+
+.exp_container .name{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.exp_container .name button{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 10px 40px;
+  width: 150px;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: .9px;
+  transition: .3s;
+}
+
+.exp_container .name button:hover{
+  border-left: 3px solid #52cdd8;
+  color: #52cdd8;
+}
+
+.exp_container .name .active{
+  border-left: 3px solid #52cdd8;
+  color: #52cdd8;
+}
+
+.experience .exp_info{
+  max-width: 800px;
+}
+
+.experience .exp_info h1{
+ letter-spacing: 1px; 
+ font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.experience .exp_info h3{
+  padding: 5px 10px;
+  font-size: 18px;
+  letter-spacing: .8px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: #cedff2;
+  color: #7391ad;
+  margin: 10px 0px;
+}
+
+.experience .exp_info .date{
+  color: #577188;
+  letter-spacing: 1px;
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.experience .exp_info .text{
+  display: flex;
+  align-items: center;
+  padding: 8px 0px;
+  font-size: 17px;
+  color: #3f5f7d;
+  line-height: 23px;
+}
+
+.experience .exp_info .text .arrow{
+  font-size: 25px;
+  padding-right: 20px;
+  color: #42bac5;
+}
+
+.experience .more_info{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 10px 40px;
+  border: none;
+  background-color: #37b2bd;
+  color: #c3f4f7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  transition: .3s;
+}
+
+.experience .more_info:hover{
+  background-color: #c3f4f7;
+  color: #02464d;
+}
+
+@media screen and (max-width: 1125px) {
+  .exp_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .exp_container .name{
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+}
